@@ -1,4 +1,4 @@
-package com.example.sprint1y2 // Mantén tu paquete actual
+package com.example.sprint1y2
 
 import android.os.Bundle
 import android.widget.RadioButton
@@ -10,14 +10,12 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main_funcional) // Vincula con tu archivo XML
+        setContentView(R.layout.activity_main_funcional)
 
-        // 1. Referenciamos los componentes de tu XML por sus IDs
         val rbSpiderman = findViewById<RadioButton>(R.id.radioButton)
         val rbPeter = findViewById<RadioButton>(R.id.radioButton2)
         val rbHombreArana = findViewById<RadioButton>(R.id.radioButton3)
 
-        // 2. Programamos los eventos de los RadioButtons de forma correcta
         rbSpiderman.setOnClickListener {
             Toast.makeText(this, "¡Correcto! Es Spiderman", Toast.LENGTH_SHORT).show()
         }
